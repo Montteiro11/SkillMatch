@@ -10,7 +10,7 @@ Comparo minhas habilidades com os requisitos de 3 vagas fictícias e, para cada 
 
 1. Clone este repositório.
 2. Abra o `skillmatch.js`.
-3. Cole o conteúdo no console do navegador (F12 → Console) ou rode com `node skillmatch.js` no terminal.
+3. Cole o conteúdo no console do navegador (F12 → Console) ou rode com o aplicativo node.js digitando `node skillmatch.js` no terminal.
 4. O resultado aparece após ~1 segundo (simulando a busca dos dados em um servidor).
 
 ## Regra de cálculo da compatibilidade
@@ -57,7 +57,7 @@ try/catch: tratamento de erro ao buscar as vagas, em main()
 
 ## Sobre var, let e const
 
-No projeto usei apenas `const` e `let`, sem usar `var`. A maioria das variáveis é `const`, porque não precisam ser reatribuídas depois de criadas. Usei `let` só no contador da closure (`quantidadeAnalisada`), já que esse valor precisa mudar a cada chamada. Optei por não usar `var` porque seu escopo é mais "solto" (ele escapa de blocos `{ }`), o que pode causar bugs difíceis de rastrear — `let` e `const` resolvem isso ao respeitar o escopo de bloco.
+No projeto usei apenas `const` e `let`, sem usar `var`. A maioria das variáveis é `const`, porque não precisam ser reatribuídas depois de criadas. Usei `let` só no contador da closure (`quantidadeAnalisada`), já que esse valor precisa mudar a cada chamada. Optei por não usar `var` porque seu escopo é mais "solto", o professor falou que ele escapa de blocos, o que pode causar bugs difíceis de rastrear — `let` e `const` resolvem isso ao respeitar o escopo de bloco.
 
 ## Como a internet funciona
 
@@ -75,4 +75,11 @@ Simulei a busca das vagas como se viessem de um servidor real: `buscarVagasDoSer
 ## Vídeo de apresentação
 
 [link do vídeo aqui]
+
+## Kanban de apresentação (Trello)
+https://trello.com/invite/b/6a95bc02f2ff8c8850dddc50/ATTI5ff790b37d8525690572591e509eb77c345C3D4F/skillmatch-js-simulador-de-compatibilidade-com-vaga-front-end-junior
+
+## Apresentação no GitHub
+
+
 
