@@ -217,3 +217,21 @@ function gerarRecomendacaoEstudo(resultados) {
 
   return `Recomendação: estude "${habilidadePrioritaria}" — é a habilidade que mais aparece faltando entre as vagas analisadas.`;
 }
+
+/* Aqui eu simulei o carregamento das vagas como se elas viessem de um
+   servidor. Utilizei um Promise e um atraso de um segundo para
+   simular o tempo de uma requisição. */
+
+function buscarVagasDoServidor() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(vagasDeEmprego);
+    }, 1000);
+  });
+}
+
+/* Aqui começa a função principal do sistema. Eu uso async e await
+   para esperar as vagas serem carregadas antes de continuar a análise.
+   Coloquei um try/catch em volta de tudo, porque, se a busca simulada
+   no servidor falhar por algum motivo, eu quero tratar esse erro em
+   vez de deixar o programa quebrar sem explicação. */
